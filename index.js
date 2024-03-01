@@ -2,10 +2,10 @@ if (window.location.href.indexOf("?") != -1) {
     var raiz = window.location.href.split("?").pop();
 
     if (raiz.length != 9) {
-        document.getElementById("resultado").innerText = "A raiz do CPF deve ser informada com nove dígitos.";
+        document.getElementById("resultado").innerText = "Informe a raiz do CPF com nove dígitos.";
     }
     else if (isNaN(raiz)) {
-        document.getElementById("resultado").innerText = "A raiz do CPF deve ser informada apenas com dígitos.";
+        document.getElementById("resultado").innerText = "Informe o CPF apenas com dígitos.";
     }
     else {
         var pesos = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2];
