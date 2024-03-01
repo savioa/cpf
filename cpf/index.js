@@ -1,5 +1,5 @@
-if (window.location.href.indexOf("#") != -1) {
-    var raiz = window.location.href.split("#").pop();
+if (window.location.href.indexOf("?") != -1) {
+    var raiz = window.location.href.split("?").pop();
 
     if (raiz.length != 9) {
         document.getElementById("resultado").innerText = "A raiz do CPF deve ser informada com nove dígitos.";
